@@ -1,0 +1,28 @@
+image: docker.ctc.com/ctc/sbt
+
+stages:
+  - test
+  - publish
+
+unit_test:
+  stage: test
+  script:
+    - sbt coverage +test
+    - sbt coverageReport
+
+publish_snapshots:
+  stage: publish
+  script:
+    - sbt +publish
+  only:
+    - master
+
+publish_releases:
+  stage: publish
+  script:
+    - sbt +publish
+  only:
+    - tags
+  only:
+    - /^rc-.*$/
+    - /^v\d.*$/

@@ -1,3 +1,4 @@
+
 organization := "com.ctc"
 name := "akka-jsend"
 version := "0.1.0-SNAPSHOT"
@@ -22,11 +23,13 @@ scalacOptions ++= Seq(
 )
 
 libraryDependencies ++= {
-  val akkaHttpVersion = "10.0.4"
-  val scalatestVersion = "3.0.1"
+  val akkaHttpVersion = "10.0.6"
+  val scalatestVersion = "3.0.3"
 
   Seq(
     "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion,
     "org.scalatest" %% "scalatest" % scalatestVersion % Test
   )
 }
+
+enablePlugins(ArtifactoryPublish)
