@@ -3,6 +3,9 @@ akka-jsend
 
 JSend support for akka-http with spray-json.
 
+[![build status](https://gitorious.ctc.com/gitlab/wassj/akka-jsend/badges/master/build.svg)](https://gitorious.ctc.com/gitlab/wassj/akka-jsend/commits/master)
+[![coverage report](https://gitorious.ctc.com/gitlab/wassj/akka-jsend/badges/master/coverage.svg)](https://gitorious.ctc.com/gitlab/wassj/akka-jsend/commits/master)
+
 #### What is JSend?
 
 A protocol defined by [OmniTI Labs](https://labs.omniti.com/labs/jsend) 
