@@ -1,5 +1,3 @@
-image: docker.ctc.com/ctc/sbt
-
 stages:
   - test
   - publish
